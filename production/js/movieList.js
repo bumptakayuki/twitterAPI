@@ -95,7 +95,7 @@ $(function () {
     var movieSearch = function (query) {
 
         $.ajax({
-                url: 'http://localhost:8888/googleSearch/production/php/api.php',
+                url: 'http://localhost:8888/twitterAPI/production/php/api_back.php',
                 type: 'post', // getかpostを指定(デフォルトは前者)
                 dataType: 'json', // 「json」を指定するとresponseがJSONとしてパースされたオブジェクトになる
                 data: { // 送信データを指定(getの場合は自動的にurlの後ろにクエリとして付加される)
@@ -169,7 +169,7 @@ $(function () {
 
                 // Ajax通信を開始する
                 $.ajax({
-                        url: 'http://ec2-52-88-160-219.us-west-2.compute.amazonaws.com/shashoku_collection_restaurant/shashoku_collection_restaurant/production/php/api.php',
+                        url: 'http://localhost:8888/twitterAPI/production/php/api_back.php',
                         type: 'post', // getかpostを指定(デフォルトは前者)
                         dataType: 'json', // 「json」を指定するとresponseがJSONとしてパースされたオブジェクトになる
                         data: { // 送信データを指定(getの場合は自動的にurlの後ろにクエリとして付加される)

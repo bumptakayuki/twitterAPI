@@ -19,8 +19,10 @@ if ($query['method'] === 'getMovieList') {
     // youtubeのコメント情報を取得する
     $commentYoutube = new CommentYoutube();
     $data = $commentYoutube->getComment($query);
+
     $analysisKeyword = new AnalysisKeyword();
     $data = $analysisKeyword->analysisKeyword($data);
+
 }
 
 echo json_encode($data);
